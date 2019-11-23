@@ -77,7 +77,7 @@ if __name__=='__main__':
             for password in f:
                 check=myBloomFilter.check(password.strip('\n'))#checking
                 if check:
-                    duplicates.write(password+'\n')#save a 'possibilty duplicate' into a file
+                    duplicates.write(password)#save a 'possibilty duplicate' into a file
                     dup+=1
     end=time.time()
 
