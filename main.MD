@@ -14,11 +14,11 @@
 
 ### WORST MODE
 <p><img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/0WW.PNG"></p>
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/w13.png">
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/2SON.png">
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/son.png">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/w13.PNG">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/2SON.PNG">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/son.PNG">
 
-
+```
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -146,3 +146,4 @@ if __name__ == "__main__":
     mode=input('Give me a mode (w for worst; b for best): ')
     main(mode)
 
+```
