@@ -42,7 +42,7 @@ class KMeans:
             self.centroids[i] = data[i]
             a=np.array([10.5+(1*i), 10.5+(0.1*i)])
             print(data[i], type(data[i]), a, type(a))
-'''
+
         if mode=='w':
         # wrong point: 21 iterations
 
