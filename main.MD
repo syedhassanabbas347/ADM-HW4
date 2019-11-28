@@ -8,9 +8,9 @@
 
 
 ### BEST MODE
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/best1.png">
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/best2.png">
-<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/bestson.png">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/best1.PNG">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/best2.PNG">
+<img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/bestson.PNG">
 
 ### WORST MODE
 <p><img src="https://github.com/santiagoparaella/ADM-HW4/blob/master/Pictures/0WW.PNG"></p>
