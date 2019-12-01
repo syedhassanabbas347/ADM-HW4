@@ -5,52 +5,52 @@
 
 
 #----------------Build your own implementation of Counting Sort-------#
-def countingSort(listelement):
+def countingSort(listelement): #create a function fors sorting
     
-    x= max(listelement)+1
-    indexList = [0 for i in range(x)]
+    x= max(listelement)+1  #take max element of list and add 1 for creating index list
+    indexList = [0 for i in range(x)] #create index list with zeros
     
-    for i in range(len(listelement)):
+    for i in range(len(listelement)): #put the elements of list into index which has same number with element
         indexList[listelement[i]] +=1 
 
-    RunningSumList =list(indexList)
-    for i in range(1,(len(RunningSumList))):
+    RunningSumList =list(indexList) #copy list
+    for i in range(1,(len(RunningSumList))):  #sum i. index and (i-1). index and put new variable to i. index
         RunningSumList[i] = RunningSumList[i] + RunningSumList[i-1]
 
-    finalList = [0 for i in range(len(listelement))]
+    finalList = [0 for i in range(len(listelement))] #create final list with zeros
    
     for i in range(len(listelement)):
         finalList[ RunningSumList[listelement[i]] -1] = listelement[i]
         RunningSumList[listelement[i]] = RunningSumList[listelement[i]] -1
     print(finalList)
 
-listelement = [1,4,1,2,7,5,2,3494,11,45]
+listelement = [1,4,1,2,7,5,2,3494,11,45] #create a random number list to try function
 countingSort(listelement)
 
 
 #-----------implementation of Counting Sort,that receives in input a list with all the letters of the alphabet-----#
-def countingSortForAlphabet(listelement):
-    ordSortedList = []
-    alphabet ='AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz'
-    alphabetDic = dict(enumerate(alphabet))
+def countingSortForAlphabet(listelement): #create a function fors sorting
+    ordSortedList = [] #create empty order list
+    alphabet ='AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz' #create an alphabet for your algorithm 
+    alphabetDic = dict(enumerate(alphabet)) #create a dictionary to give a number for each alphabet
     
-    for i in range(len(listelement)):
+    for i in range(len(listelement)): #give a number for each alphabet
         for key, value in alphabetDic.items():
             if  listelement[i] == value:
                 ordSortedList.append(key)
-    x= max(ordSortedList)+1
-    indexList = [0 for i in range(x)]
+    x= max(ordSortedList)+1  #take max element of list and add 1 for creating index list
+    indexList = [0 for i in range(x)] #create index list with zeros
 
 
-    for i in range(len(ordSortedList)):
+    for i in range(len(ordSortedList)):  #put the elements of list into index which has same number with element
         indexList[ordSortedList[i]] +=1 
 
-    RunningSumList =list(indexList)
+    RunningSumList =list(indexList) #copy list 
    
-    for i in range(1,(len(RunningSumList))):
+    for i in range(1,(len(RunningSumList))): #sum i. index and (i-1). index and put new variable to i. index
         RunningSumList[i] = RunningSumList[i] + RunningSumList[i-1]
 
-    finalList = [0 for i in range(len(ordSortedList))]
+    finalList = [0 for i in range(len(ordSortedList))] #create final list with zeros
    
     for i in range(len(ordSortedList)):
         finalList[ RunningSumList[ordSortedList[i]] -1] = ordSortedList[i]
